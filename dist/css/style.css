@@ -1,0 +1,46 @@
+@import url("https://fonts.google.com/specimen/Roboto?selection.family=Montserrat|Open+Sans|Roboto");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+#sideMenu {
+  background: #302D43;
+  max-width: 280px;
+  width: 280px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 1; }
+  #sideMenu nav a {
+    display: block;
+    color: #EAEDF3;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: 300;
+    transition: all .3s ease-in-out; }
+    #sideMenu nav a span {
+      display: inline-block; }
+    #sideMenu nav a:hover {
+      background: #282639;
+      padding: 15px 30px 15px 25px;
+      color: #92CF48; }
+      #sideMenu nav a:hover .fa {
+        color: #92CF48; }
+    #sideMenu nav a.active {
+      background: #282639;
+      color: #92CF48;
+      border-right: 5px solid #92CF48;
+      padding: 15px 30px 15px 25px; }
+      #sideMenu nav a.active .fa {
+        color: #92CF48; }
+    #sideMenu nav a .fa {
+      color: #EAEDF3;
+      font-size: 1.4rem;
+      margin-right: 0.8rem;
+      display: inline-block;
+      width: 30px;
+      position: relative;
+      top: 2px; }
