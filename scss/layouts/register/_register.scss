@@ -1,0 +1,129 @@
+@import 'media';
+
+#register {
+    display: flex;
+    flex-direction: row;
+    color: $dark;
+
+    #left {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        color: $dark;
+
+        .signup {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            padding-bottom: 10px;
+
+            .logo {
+                margin-bottom: 4vh;
+
+                h1 {
+                    font-size: 40px;
+                    font-weight: 500;
+                }
+            }
+
+            form {
+                width: 100%;
+                padding-bottom: 20px;
+            }
+
+            .form-group-name {
+                width: 50%;
+                float: left;
+
+                &.form-padding {
+                    padding-left: 20px;
+                    width: 50%;
+                }
+            }
+
+            label {
+                font-size: 12px;
+                line-height: 30px;
+                font-weight: 500;
+            }
+
+            .text-input {
+                margin-bottom: 15px;
+                width: 100%;
+                border-radius: 2px;
+                background: transparent;
+                border: 1px solid $blue;
+                color: $dark;
+                padding: 8px 15px;
+                line-height: 10px;
+            }
+
+            .primary-btn {
+                width: 100%;
+            }
+
+            .or,
+            .links {
+                width: 60%;
+            }
+
+            .links {
+                a {
+                    display: block;
+                    text-decoration: none;
+                    margin-bottom: 10px;
+                    text-align: center;
+                    color: $dark;
+
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+
+            .or {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 10px;
+                align-items: center;
+
+                .bar {
+                    flex: auto;
+                    border: none;
+                    height: 1px;
+                    background: $dark;
+                }
+
+                span {
+                    color: $dark;
+                    padding: 0 0.8rem;
+                }
+            }
+        }
+    }
+
+    #right {
+        flex: 1;
+
+        #showcase {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // background: url('https://image.ibb.co/cO9Lxq/login-bg.jpg') no-repeat center center / cover;
+            height: 100vh;
+            text-align: center;
+
+            .showcase-text {
+                font-size: 36px;
+                width: 100%;
+                color: $dark;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

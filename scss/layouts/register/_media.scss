@@ -1,0 +1,38 @@
+@media (min-width: 1200px) {
+    #left {
+        flex: 4;
+    }
+
+    #right {
+        flex: 6;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+
+    #right {
+        display: none;
+    }
+
+    #left {
+        justify-content: start;
+        margin-top: 4vh;
+
+        .signin {
+            .logo {
+                margin-bottom: 2vh;
+            }
+
+            .text-input {
+                margin-bottom: 0.7rem;
+            }
+        }
+
+        #main-footer {
+            padding-top: 1rem;
+        }
+    }
+}

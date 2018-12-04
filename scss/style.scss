@@ -1,8 +1,18 @@
 @import url('https://fonts.google.com/specimen/Roboto?selection.family=Montserrat|Open+Sans|Roboto');
+// Variables and Functions
 @import 'variables';
+@import 'mixins';
+
+// Global CSS
 @import 'global';
+
+// Components
 @import 'components/sidemenu';
 @import 'components/buttons';
+
+// Layouts
+@import 'layouts/login/login';
+@import 'layouts/register/register';
 
 #sideMenu {
     background: $purpleLight;

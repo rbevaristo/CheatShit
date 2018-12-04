@@ -1,0 +1,29 @@
+@mixin hover-button($color) {
+    background: rgba($color, 0.8);
+
+    &:hover {
+        background: $color;
+    }
+}
+
+@mixin hover-outline-button($color) {
+    background: transparent;
+    border: 1px solid $color;
+    color: $color;
+
+    &:hover {
+        background: $color;
+        color: $white;
+    }
+}
+
+@mixin hover-alert($color) {
+    border-left: 5px solid $color;
+    border-bottom: 1px solid $color;
+    color: $color;
+
+    &:hover {
+        background: $color;
+        color: $white;
+    }
+}
