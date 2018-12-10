@@ -1,0 +1,103 @@
+#sideMenu {
+    // background: $darkGrey;
+    background: $purpleDark;
+    max-width: 250px;
+    width: 80px;
+    position: fixed;
+    top: 48px;
+    bottom: 0;
+    z-index: 100;
+    // -webkit-transition: all 0.5s;
+    transition: 0.5s;
+
+    overflow: auto;
+
+    &.isOpen {
+        width: 250px;
+        transition: opacity 0s ease-in-out 0s;
+
+        nav {
+            a {
+                span {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    nav {
+        a {
+            display: block;
+            color: $darkGrey;
+            text-decoration: none;
+            padding: 15px 30px;
+            font-weight: 300;
+            transition: all .3s ease-in-out;
+
+            span {
+                display: none;
+            }
+
+            &:hover {
+                background: $lightGrey;
+                padding: 15px 30px 15px 25px;
+                color: $purpleDark;
+                border-left: 5px solid $purpleDark;
+
+                .fa {
+                    color: $purpleDark;
+                }
+            }
+
+            &.active {
+                background: $lightGrey;
+                color: $purpleDark;
+                border-left: 5px solid $purpleDark;
+                padding: 15px 30px 15px 25px;
+
+                .fa {
+                    color: $purpleDark;
+                }
+            }
+
+            .fa {
+                color: $darkGrey;
+                font-size: 1.4rem;
+                margin-right: 0.8rem;
+                display: inline-block;
+                width: 30px;
+                position: relative;
+                top: 2px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {}
+
+@media (max-width: 768px) {
+    #sideMenu {
+
+        width: 0;
+
+        nav {
+            a {
+                display: none;
+            }
+        }
+
+        &.isOpen {
+            width: 100%;
+
+            nav {
+                a {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    #content-area {
+        margin-left: 0px;
+    }
+}

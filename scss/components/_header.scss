@@ -1,0 +1,25 @@
+header {
+    background: $purpleDark;
+    color: $white;
+    transition: all 0.5s;
+    padding: 10px 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+
+    h1 {
+        font-size: 24px;
+        font-weight: 500;
+        display: inline-block;
+    }
+
+    button {
+        float: left;
+        margin: 0 15px;
+        border: none;
+        border-radius: 50%;
+        background: transparent;
+        color: $white;
+        outline: none;
+    }
+}

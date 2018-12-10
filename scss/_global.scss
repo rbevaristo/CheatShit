@@ -9,7 +9,7 @@ body {
     font-weight: 300;
     background: $body-bg;
     color: $white;
-    overflow: hidden;
+    overflow: auto;
 }
 
 h1,
@@ -21,162 +21,109 @@ h6 {
     font-weight: 300;
 }
 
+@import 'functions';
+@import 'scrollbar';
+@import 'components/backgrounds';
+@import 'components/buttons';
+@import 'components/alerts';
 
-// Buttons
-.btn {
+.widget {
+    border-radius: 5px;
     color: $white;
-    border: 0;
-    display: inline-block;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .4);
+
+    .fa {
+        font-size: 45px;
+    }
+
+    span,
+    h2 {
+        width: 100%;
+        float: right;
+        text-align: right;
+    }
+
+    span {
+        font-weight: 500;
+    }
+}
+
+.box {
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding: 0;
+
+    .box-title {
+        margin-bottom: 0;
+        padding: 15px 90px 8px 15px;
+        min-height: 48px;
+        position: relative;
+        color: $white;
+
+        h5 {
+            display: inline-block;
+            font-size: 14px;
+            margin: 0 0 7px;
+            padding: 0;
+            text-overflow: ellipsis;
+            float: none;
+        }
+
+        a {
+            color: $white;
+        }
+
+        span {
+            float: right;
+            font-size: 15px;
+            margin-right: -75px;
+        }
+    }
+
+    .box-content {
+        background-color: #ffffff;
+        color: $dark;
+        padding: 10px;
+        border-color: #e7eaec;
+        border-image: none;
+        border-style: solid solid none;
+        border-width: 1px 0;
+        overflow: auto;
+
+        ul {
+            list-style: none;
+
+            li {
+                // padding: 10px 5px;
+                border-bottom: 0.5px solid rgba($purpleLight, 0.8);
+                width: 100%;
+            }
+        }
+    }
+}
+
+.box-sm {
+    height: 200px;
+    max-height: 200px;
+}
+
+.box-md {
+    height: 300px;
+    max-height: 300px;
+}
+
+.box-lg {
+    max-height: 400px;
+}
+
+.badge {
+    padding: 5px;
     border-radius: 2px;
-    font-weight: 500;
-    text-decoration: none;
-    cursor: pointer;
-    text-align: center;
-    transition: all 0.3s;
-    padding: 9px 15px;
-    font-size: 14px;
-    position: relative;
-    overflow: hidden;
-    // box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
 
-    &:after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 5px;
-        height: 5px;
-        background: rgba(255, 255, 255, .5);
-        opacity: 0;
-        border-radius: 100%;
-        transform: scale(1, 1) translate(-50%);
-        transform-origin: 50% 50%;
+
+    &.badge-sm {
+        float: right;
+        font-size: 10px;
     }
-
-    &:focus:not(:active)::after {
-        animation: ripple 1s ease-out;
-    }
-}
-
-
-.primary-btn {
-    @include hover-button($blue);
-}
-
-.danger-btn {
-    @include hover-button($red);
-}
-
-.warning-btn {
-    @include hover-button($orange);
-}
-
-.success-btn {
-    @include hover-button($green);
-}
-
-.info-btn {
-    @include hover-button($teal);
-}
-
-.secondary-btn {
-    @include hover-button($dark);
-}
-
-.primary-outline-btn {
-    @include hover-outline-button($blue);
-}
-
-.danger-outline-btn {
-    @include hover-outline-button($red);
-}
-
-.warning-outline-btn {
-    @include hover-outline-button($orange);
-}
-
-.success-outline-btn {
-    @include hover-outline-button($green);
-}
-
-.info-outline-btn {
-    @include hover-outline-button($teal);
-}
-
-.secondary-outline-btn {
-    @include hover-outline-button($dark);
-}
-
-.xs-btn {
-    padding: 3px 6px;
-    font-size: 10px;
-}
-
-.sm-btn {
-    padding: 6px 12px;
-    font-size: 12px;
-}
-
-.md-btn {
-    padding: 9px 15px;
-    font-size: 14px;
-}
-
-.lg-btn {
-    padding: 12px 18px;
-    font-size: 16px;
-}
-
-.xl-btn {
-    padding: 15px 21px;
-    font-size: 20px;
-}
-
-
-@keyframes ripple {
-    0% {
-        transform: scale(0, 0);
-        opacity: 1;
-    }
-
-    20% {
-        transform: scale(25, 25);
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        transform: scale(40, 40);
-    }
-}
-
-.alert {
-    width: 100%;
-    padding: 10px 15px;
-    display: block;
-    transition: all 0.3s;
-}
-
-.primary-alert {
-    @include hover-alert($blue);
-}
-
-.danger-alert {
-    @include hover-alert($red);
-}
-
-.success-alert {
-    @include hover-alert($green);
-}
-
-.warning-alert {
-    @include hover-alert($orange);
-}
-
-.info-alert {
-    @include hover-alert($teal);
-}
-
-.secondary-alert {
-    @include hover-alert($dark);
 }

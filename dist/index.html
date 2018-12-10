@@ -2,43 +2,346 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-    <aside id="sideMenu">
-        <nav>
-            <a href="#" class="active">
-                <i class="fa fa-home" aria-hidden="true"></i>
-                <span> Home</span>
-            </a>
-            <a href="#">
-                <i class="fa fa-sticky-note" aria-hidden="true"></i>
-                <span> Files</span>
-            </a>
-            <a href="#">
-                <i class="fa fa-bookmark" aria-hidden="true"></i>
-                <span> Bookmark</span>
-            </a>
-            <a href="#">
-                <i class="fa fa-calendar" aria-hidden="true"></i>
-                <span> Calendar</span>
-            </a>
-            <a href="#">
-                <i class="fa fa-user-circle" aria-hidden="true"></i>
-                <span> Users</span>
-            </a>
-            <a href="#">
-                <i class="fa fa-cog" aria-hidden="true"></i>
-                <span> Settings</span>
-            </a>
-        </nav>
-    </aside>
+    <div id="app">
+        <div id="wrapper">
+            <aside id="sideMenu">
+                <nav>
+                    <a href="#" class="active">
+                        <i class="fa fa-dashboard" aria-hidden="true"></i>
+                        <span> Overview</span>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa fa-tasks" aria-hidden="true"></i>
+                        <span> Projects</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span> Schedules</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span> Sales</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-file" aria-hidden="true"></i>
+                        <span> Reports</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <span> Employees</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-money" aria-hidden="true"></i>
+                        <span> Payroll</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                        <span> Settings</span>
+                    </a>
+                </nav>
+            </aside>
+
+            <header id="headerNav">
+                <button type="button" class="btn sm-btn" id="sideMenu--toggler">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <h1>BMS</h1>
+            </header>
+
+            <main id="content-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="heading">
+                                <h1>Dashboard</h1>
+                                <p>Welcome <strong>Richard</strong></p>
+                            </div>
+                            <div class="dateNtime">
+                                <span>December 10, 2018</span> <span id="realTime"> </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Widgets -->
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12">
+                            <a href="#">
+                                <div class="widget dark-bg">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4">
+                                            <i class="fa fa-tasks"></i>
+                                        </div>
+                                        <div class="col-md-8 col-sm-8">
+                                            <span>Projects</span>
+                                            <h2>300</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <a href="#">
+                                <div class="widget green-bg">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4">
+                                            <i class="fa fa-shopping-cart"></i>
+                                        </div>
+                                        <div class="col-md-8 col-sm-8">
+                                            <span>Sales</span>
+                                            <h2>120,000</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <a href="#">
+                                <div class="widget blue-bg">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4">
+                                            <i class="fa fa-file"></i>
+                                        </div>
+                                        <div class="col-md-8 col-sm-8">
+                                            <span>Reports</span>
+                                            <h2>1250</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <a href="#">
+                                <div class="widget red-bg">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4">
+                                            <i class="fa fa-users"></i>
+                                        </div>
+                                        <div class="col-md-8 col-sm-8">
+                                            <span>Employees</span>
+                                            <h2>24</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Boxes -->
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="box blue-bg">
+                                <div class="box-title">
+                                    <h5>Due Projects</h5>
+                                    <a href="#">
+                                        <span><i class="fa fa-cog"></i></span>
+                                    </a>
+                                </div>
+                                <div class="box-content box-lg">
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-4">
+                                            <div class="project-date">
+                                                <small>December</small> <span>18</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8 col-sm-8">
+                                            <div class="project-info">
+                                                <h2 class="title">Project Title</h2>
+                                                <span class="customer-name">Richard Evaristo</span>
+                                                <span class="customer-contact">09173208762 | richard@gmail.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="project-assignee">
+                                                <img src="./imgs/pic1.jpg" alt="Credits: https://uifaces.co" title="Credits: https://uifaces.co" />
+                                                <img src="./imgs/pic2.jpg" alt="Credits: https://uifaces.co" title="Credits: https://uifaces.co" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-4">
+                                            <div class="project-date">
+                                                <small>December</small> <span>20</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8 col-sm-8">
+                                            <div class="project-info">
+                                                <h2 class="title">Project Title</h2>
+                                                <span class="customer-name">Richard Evaristo</span>
+                                                <span class="customer-contact">09173208762 | richard@gmail.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="project-assignee">
+                                                <img src="./imgs/pic1.jpg" alt="Credits: https://uifaces.co" title="Credits: https://uifaces.co" />
+                                                <img src="./imgs/pic2.jpg" alt="Credits: https://uifaces.co" title="Credits: https://uifaces.co" />
+                                                <img src="./imgs/pic1.jpg" alt="Credits: https://uifaces.co" title="Credits: https://uifaces.co" />
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="box dark-bg">
+                                <div class="box-title">
+                                    <h5>Recent Projects</h5>
+                                    <a href="#">
+                                        <span><i class="fa fa-cog"></i></span>
+                                    </a>
+                                </div>
+                                <div class="box-content box-lg">
+                                    <ul>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-4">
+                                                    Project 1
+                                                </div>
+                                                <div class="col-md-9 col-sm-8">
+                                                    <i class="badge badge-sm green-bg">done</i>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-4">
+                                                    Project 2
+                                                </div>
+                                                <div class="col-md-9 col-sm-8">
+                                                    <i class="badge badge-sm red-bg">cancelled</i>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-4">
+                                                    Project 3
+                                                </div>
+                                                <div class="col-md-9 col-sm-8">
+                                                    <i class="badge badge-sm blue-bg">on going</i>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-4">
+                                                    Project 4
+                                                </div>
+                                                <div class="col-md-9 col-sm-8">
+                                                    <i class="badge badge-sm blue-bg">on going</i>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-4">
+                                                    Project 5
+                                                </div>
+                                                <div class="col-md-9 col-sm-8">
+                                                    <i class="badge badge-sm blue-bg">on going</i>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="box red-bg">
+                                <div class="box-title">
+                                    <h5>Employees</h5>
+                                    <a href="#">
+                                        <span><i class="fa fa-cog"></i></span>
+                                    </a>
+                                </div>
+                                <div class="box-content box-lg">
+                                    <ul>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-1 col-sm-2">
+                                                    <img src="./imgs/pic7.jpg" alt="Credits: https://uifaces.co" title="Credits: https://uifaces.co" />
+                                                </div>
+                                                <div class="col-md-8 col-sm-6">
+                                                    <span>John Doe</span>
+                                                </div>
+                                                <div class="col-md-3 col-sm-4">
+                                                    <span class="action-icons">
+                                                        <i class="fa fa-eye"></i>
+                                                        <i class="fa fa-pencil"></i>
+                                                        <i class="fa fa-times"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-1 col-sm-2">
+                                                    <img src="./imgs/pic8.jpg" alt="Credits: https://uifaces.co" title="Credits: https://uifaces.co" />
+                                                </div>
+                                                <div class="col-md-8 col-sm-6">
+                                                    <span>John Doe</span>
+                                                </div>
+                                                <div class="col-md-3 col-sm-4">
+                                                    <span class="action-icons">
+                                                        <i class="fa fa-eye"></i>
+                                                        <i class="fa fa-pencil"></i>
+                                                        <i class="fa fa-times"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-1 col-sm-2">
+                                                    <img src="./imgs/pic9.jpg" alt="Credits: https://uifaces.co" title="Credits: https://uifaces.co" />
+                                                </div>
+                                                <div class="col-md-8 col-sm-6">
+                                                    <span>John Doe</span>
+                                                </div>
+                                                <div class="col-md-3 col-sm-4">
+                                                    <span class="action-icons">
+                                                        <i class="fa fa-eye"></i>
+                                                        <i class="fa fa-pencil"></i>
+                                                        <i class="fa fa-times"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-1 col-sm-2">
+                                                    <img src="./imgs/pic10.jpg" alt="Credits: https://uifaces.co" title="Credits: https://uifaces.co" />
+                                                </div>
+                                                <div class="col-md-8 col-sm-6">
+                                                    <span>John Doe</span>
+                                                </div>
+                                                <div class="col-md-3 col-sm-4">
+                                                    <span class="action-icons">
+                                                        <i class="fa fa-eye"></i>
+                                                        <i class="fa fa-pencil"></i>
+                                                        <i class="fa fa-times"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

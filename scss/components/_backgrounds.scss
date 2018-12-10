@@ -1,0 +1,39 @@
+.blue-bg {
+    @include background-color-text($blue);
+}
+
+.red-bg {
+    @include background-color-text($red);
+}
+
+.purple-bg {
+    @include background-color-text($purple);
+}
+
+.pink-bg {
+    @include background-color-text($pink);
+}
+
+.orange-bg {
+    @include background-color-text($orange);
+}
+
+.yellow-bg {
+    @include background-color-text($yellow);
+}
+
+.green-bg {
+    @include background-color-text($green);
+}
+
+.teal-bg {
+    @include background-color-text($teal);
+}
+
+.dark-bg {
+    @include background-color-text($dark);
+}
+
+.light-bg {
+    @include background-color-text($white);
+}

@@ -6,6 +6,9 @@
 // Global CSS
 @import 'global';
 
+// Grid
+@import 'grid';
+
 // Components
 @import 'components/sidemenu';
 @import 'components/buttons';
@@ -14,71 +17,152 @@
 @import 'layouts/login/login';
 @import 'layouts/register/register';
 
-#sideMenu {
-    background: $purpleLight;
-    max-width: 280px;
-    width: 280px;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-    z-index: 1;
+#wrapper {
+    height: 100%;
+    overflow: auto;
+    @import 'components/sidemenu';
+    @import 'components/header';
 
-    nav {
-        a {
-            display: block;
-            color: $darkGrey;
-            text-decoration: none;
-            padding: 15px 30px;
-            font-weight: 300;
-            transition: all .3s ease-in-out;
+    #content-area {
+        padding-top: 40px;
+        margin-left: 80px;
+        color: $purpleLight;
+        height: 100%;
+
+        .dateNtime {
+            float: right;
+            margin-top: -50px;
+            text-align: right;
 
             span {
-                display: inline-block;
+                display: block;
             }
+        }
 
-            &:hover {
-                background: $purpleDark;
-                padding: 15px 30px 15px 25px;
-                color: $neonGreen;
+        .box {
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, .4);
 
-                .fa {
-                    color: $neonGreen;
+            .box-content {
+                padding: 0;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
                 }
-            }
 
-            &.active {
-                background: $purpleDark;
-                color: $neonGreen;
-                border-right: 5px solid $neonGreen;
-                padding: 15px 30px 15px 25px;
+                .action-icons {
+                    text-align: right;
 
-                .fa {
-                    color: $neonGreen;
+                    i {
+                        display: inline-block;
+                    }
                 }
-            }
 
-            .fa {
-                color: $darkGrey;
-                font-size: 1.4rem;
-                margin-right: 0.8rem;
-                display: inline-block;
-                width: 30px;
-                position: relative;
-                top: 2px;
+                .project-date {
+                    padding: 10px 15px;
+                    text-align: center;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, .4);
+                    color: $purpleDark;
+
+                    small {
+                        display: block;
+
+                    }
+
+                    span {
+                        font-size: 40px;
+                        font-weight: 700;
+                    }
+                }
+
+                .project-info {
+                    padding-left: 10px;
+
+                    h2 {
+                        font-size: 50px;
+                        font-weight: 700;
+                    }
+
+                    span {
+                        display: inline-block;
+
+                        &.customer-name {
+                            font-size: 15px;
+                            font-weight: 700;
+                        }
+
+                        &.customer-contact {
+                            font-size: 12px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                .project-assignee {
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                }
             }
         }
     }
+}
 
-    // &:hover {
-    //     max-width: 280px;
-    //     transition: opacity 0.28s ease-in-out 0s;
+@media (min-width: 1200px) {}
 
-    //     a {
-    //         span {
-    //             display: inline-block;
-    //         }
-    //     }
-    // }
+@media (max-width: 768px) {
+    #wrapper {
+        #content-area {
+            margin-left: 0;
+
+            .box {
+                .box-content {
+
+                    .project-date {
+                        padding: 5px;
+
+                        small {
+                            display: block;
+                        }
+
+                        span {
+                            font-size: 40px;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .project-info {
+                        h2 {
+                            font-size: 20px;
+                            font-weight: 700;
+                        }
+
+                        span {
+
+                            &.customer-name {
+                                font-size: 15px;
+                                font-weight: 700;
+                            }
+
+                            &.customer-contact {
+                                font-size: 12px;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+
+                    .project-assignee {
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

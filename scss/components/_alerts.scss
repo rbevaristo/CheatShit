@@ -1,0 +1,30 @@
+.alert {
+    width: 100%;
+    padding: 10px 15px;
+    display: block;
+    transition: all 0.3s;
+}
+
+.primary-alert {
+    @include hover-alert($blue);
+}
+
+.danger-alert {
+    @include hover-alert($red);
+}
+
+.success-alert {
+    @include hover-alert($green);
+}
+
+.warning-alert {
+    @include hover-alert($orange);
+}
+
+.info-alert {
+    @include hover-alert($teal);
+}
+
+.secondary-alert {
+    @include hover-alert($dark);
+}

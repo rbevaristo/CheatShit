@@ -27,3 +27,12 @@
         color: $white;
     }
 }
+
+@mixin background-color-text($color) {
+    background: rgba($color, 0.9);
+    color: set-background-text-color($color);
+
+    &:hover {
+        background: $color;
+    }
+}
