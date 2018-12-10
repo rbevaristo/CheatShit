@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <div id="app">
+        <div id="wrapper">
+            <aside id="sideMenu">
+                <nav>
+                    <a href="index.html">
+                        <i class="fa fa-dashboard" aria-hidden="true"></i>
+                        <span> Overview</span>
+                    </a>
+
+                    <a href="tasks.html">
+                        <i class="fa fa-tasks" aria-hidden="true"></i>
+                        <span> Projects</span>
+                    </a>
+                    <a href="schedules.html">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span> Schedules</span>
+                    </a>
+                    <a href="sales.html" class="active">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span> Sales</span>
+                    </a>
+                    <a href="reports.html">
+                        <i class="fa fa-file" aria-hidden="true"></i>
+                        <span> Reports</span>
+                    </a>
+                    <a href="employees.html">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <span> Employees</span>
+                    </a>
+                    <a href="payroll.html">
+                        <i class="fa fa-money" aria-hidden="true"></i>
+                        <span> Payroll</span>
+                    </a>
+                    <a href="settings.html">
+                        <i class="fa fa-cogs" aria-hidden="true"></i>
+                        <span> Settings</span>
+                    </a>
+                </nav>
+            </aside>
+
+            <header id="headerNav">
+                <button type="button" class="btn sm-btn" id="sideMenu--toggler">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <h1>BMS</h1>
+            </header>
+
+            <main id="content-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="heading">
+                                <h1><i class="fa fa-shopping-cart"></i> Sales</h1>
+                                <p>Dashboard / <strong>Sales</strong></p>
+                            </div>
+                            <div class="dateNtime">
+                                <span>December 10, 2018</span> <span id="realTime"> </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

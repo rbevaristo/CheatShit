@@ -1,6 +1,6 @@
 @function set-background-text-color($color) {
     @if (lightness($color) > 50) {
-        @return $white;
+        @return $dark;
     }
 
     @else {

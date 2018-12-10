@@ -104,12 +104,10 @@ h6 {
 }
 
 .box-sm {
-    height: 200px;
     max-height: 200px;
 }
 
 .box-md {
-    height: 300px;
     max-height: 300px;
 }
 
@@ -125,5 +123,31 @@ h6 {
     &.badge-sm {
         float: right;
         font-size: 10px;
+    }
+}
+
+
+
+.card {
+    .card-header {
+        padding: 10px 15px;
+        font-weight: 700;
+
+        &#backlog {
+            border-top: 5px solid $purpleDark;
+        }
+
+        &#progress {
+            border-top: 5px solid $pink;
+        }
+
+        &#feedback {
+            border-top: 5px solid $teal;
+        }
+
+        &#completed {
+            border-top: 5px solid $neonGreen;
+        }
+
     }
 }

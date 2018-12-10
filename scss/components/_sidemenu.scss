@@ -1,5 +1,4 @@
 #sideMenu {
-    // background: $darkGrey;
     background: $purpleDark;
     max-width: 250px;
     width: 80px;
@@ -7,7 +6,6 @@
     top: 48px;
     bottom: 0;
     z-index: 100;
-    // -webkit-transition: all 0.5s;
     transition: 0.5s;
 
     overflow: auto;
@@ -52,11 +50,11 @@
             &.active {
                 background: $lightGrey;
                 color: $purpleDark;
-                border-left: 5px solid $purpleDark;
+                border-left: 5px solid $neonGreen;
                 padding: 15px 30px 15px 25px;
 
                 .fa {
-                    color: $purpleDark;
+                    color: $neonGreen;
                 }
             }
 

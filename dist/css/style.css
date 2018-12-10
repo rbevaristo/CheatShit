@@ -37,37 +37,37 @@ h6 {
 
 .blue-bg {
   background: rgba(52, 144, 220, 0.9);
-  color: #ffffff; }
+  color: #3f3f3f; }
   .blue-bg:hover {
     background: #3490dc; }
 
 .red-bg {
   background: rgba(227, 52, 47, 0.9);
-  color: #ffffff; }
+  color: #3f3f3f; }
   .red-bg:hover {
     background: #e3342f; }
 
 .purple-bg {
   background: rgba(149, 97, 226, 0.9);
-  color: #ffffff; }
+  color: #3f3f3f; }
   .purple-bg:hover {
     background: #9561e2; }
 
 .pink-bg {
   background: rgba(246, 109, 155, 0.9);
-  color: #ffffff; }
+  color: #3f3f3f; }
   .pink-bg:hover {
     background: #f66D9b; }
 
 .orange-bg {
   background: rgba(246, 153, 63, 0.9);
-  color: #ffffff; }
+  color: #3f3f3f; }
   .orange-bg:hover {
     background: #f6993f; }
 
 .yellow-bg {
   background: rgba(255, 237, 74, 0.9);
-  color: #ffffff; }
+  color: #3f3f3f; }
   .yellow-bg:hover {
     background: #ffed4a; }
 
@@ -79,7 +79,7 @@ h6 {
 
 .teal-bg {
   background: rgba(77, 192, 181, 0.9);
-  color: #ffffff; }
+  color: #3f3f3f; }
   .teal-bg:hover {
     background: #4dc0b5; }
 
@@ -91,7 +91,7 @@ h6 {
 
 .light-bg {
   background: rgba(255, 255, 255, 0.9);
-  color: #ffffff; }
+  color: #3f3f3f; }
   .light-bg:hover {
     background: #ffffff; }
 
@@ -341,11 +341,9 @@ h6 {
         width: 100%; }
 
 .box-sm {
-  height: 200px;
   max-height: 200px; }
 
 .box-md {
-  height: 300px;
   max-height: 300px; }
 
 .box-lg {
@@ -357,6 +355,18 @@ h6 {
   .badge.badge-sm {
     float: right;
     font-size: 10px; }
+
+.card .card-header {
+  padding: 10px 15px;
+  font-weight: 700; }
+  .card .card-header#backlog {
+    border-top: 5px solid #282639; }
+  .card .card-header#progress {
+    border-top: 5px solid #f66D9b; }
+  .card .card-header#feedback {
+    border-top: 5px solid #4dc0b5; }
+  .card .card-header#completed {
+    border-top: 5px solid #92CF48; }
 
 .container {
   width: 100%;
@@ -525,10 +535,10 @@ h6 {
     #sideMenu nav a.active {
       background: #F4F6F9;
       color: #282639;
-      border-left: 5px solid #282639;
+      border-left: 5px solid #92CF48;
       padding: 15px 30px 15px 25px; }
       #sideMenu nav a.active .fa {
-        color: #282639; }
+        color: #92CF48; }
     #sideMenu nav a .fa {
       color: #EAEDF3;
       font-size: 1.4rem;
@@ -951,10 +961,10 @@ h6 {
       #wrapper #sideMenu nav a.active {
         background: #F4F6F9;
         color: #282639;
-        border-left: 5px solid #282639;
+        border-left: 5px solid #92CF48;
         padding: 15px 30px 15px 25px; }
         #wrapper #sideMenu nav a.active .fa {
-          color: #282639; }
+          color: #92CF48; }
       #wrapper #sideMenu nav a .fa {
         color: #EAEDF3;
         font-size: 1.4rem;
