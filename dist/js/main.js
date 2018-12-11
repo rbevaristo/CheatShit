@@ -29,3 +29,16 @@ function checkTime(i) {
 }
 
 startTime();
+
+let borderCards = () => {
+    let borders = document.getElementsByClassName('border-color-top');
+    for (var i = 0; i < borders.length; i++) {
+        var r = Math.floor(Math.random() * 255);
+        var g = Math.floor(Math.random() * 255);
+        var b = Math.floor(Math.random() * 255);
+        // if ((i % 2) != 0)
+        borders[i].style.borderTop = `5px solid rgb(${r},${g},${b})`;
+    }
+}
+
+borderCards();

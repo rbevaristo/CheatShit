@@ -317,7 +317,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  background: #f8fafc;
+  background: #EAEDF3;
   color: #ffffff;
   overflow: auto; }
 
@@ -678,6 +678,18 @@ h6 {
   .card .card-header#completed {
     border-top: 5px solid #92CF48; }
 
+.heading a {
+  text-decoration: none;
+  color: rgba(40, 38, 57, 0.5); }
+  .heading a:hover {
+    color: #282639; }
+
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
+
 .container {
   width: 100%;
   margin: 0 auto; }
@@ -694,6 +706,42 @@ h6 {
   width: 100%;
   min-height: 1px;
   display: inline-block; }
+
+.col-1 {
+  width: 8.33333%; }
+
+.col-2 {
+  width: 16.66667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%; }
+
+.col-12 {
+  width: 100%; }
 
 @media only screen and (min-width: 0px) {
   .container {
@@ -836,14 +884,14 @@ h6 {
     #sideMenu nav a span {
       display: none; }
     #sideMenu nav a:hover {
-      background: #F4F6F9;
+      background: #EAEDF3;
       padding: 15px 30px 15px 25px;
       color: #282639;
       border-left: 5px solid #282639; }
       #sideMenu nav a:hover .fa {
         color: #282639; }
     #sideMenu nav a.active {
-      background: #F4F6F9;
+      background: #EAEDF3;
       color: #282639;
       border-left: 5px solid #92CF48;
       padding: 15px 30px 15px 25px; }
@@ -1262,14 +1310,14 @@ h6 {
       #wrapper #sideMenu nav a span {
         display: none; }
       #wrapper #sideMenu nav a:hover {
-        background: #F4F6F9;
+        background: #EAEDF3;
         padding: 15px 30px 15px 25px;
         color: #282639;
         border-left: 5px solid #282639; }
         #wrapper #sideMenu nav a:hover .fa {
           color: #282639; }
       #wrapper #sideMenu nav a.active {
-        background: #F4F6F9;
+        background: #EAEDF3;
         color: #282639;
         border-left: 5px solid #92CF48;
         padding: 15px 30px 15px 25px; }
@@ -1308,7 +1356,7 @@ h6 {
       display: inline-block; }
     #wrapper header button {
       float: left;
-      margin: 0 15px;
+      margin: 0 25px 0 5px;
       border: none;
       border-radius: 50%;
       background: transparent;
@@ -1425,6 +1473,107 @@ h6 {
           color: #282639; }
       #wrapper #content-area #projects .card .card-body .row:hover {
         background: #EAEDF3; }
+    #wrapper #content-area #project-details .details strong {
+      display: block;
+      text-align: right;
+      margin-bottom: 7px; }
+    #wrapper #content-area #project-details .details span {
+      display: block;
+      text-align: left;
+      margin-bottom: 7px; }
+    #wrapper #content-area #project-details .details .progress-bar {
+      float: none;
+      padding: 0;
+      height: 10px;
+      border-radius: 5px;
+      background: #6C7882; }
+    #wrapper #content-area #project-details .details hr {
+      height: 10px;
+      border: 0;
+      border-radius: 5px; }
+    #wrapper #content-area #project-details .participants .card {
+      background: #ffffff; }
+    #wrapper #content-area #project-details .participants ul {
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+      #wrapper #content-area #project-details .participants ul a {
+        text-decoration: none;
+        color: rgba(40, 38, 57, 0.8); }
+        #wrapper #content-area #project-details .participants ul a:hover {
+          color: #282639; }
+          #wrapper #content-area #project-details .participants ul a:hover li {
+            background: #B8C1CD; }
+      #wrapper #content-area #project-details .participants ul li {
+        display: block;
+        padding: 10px 15px; }
+        #wrapper #content-area #project-details .participants ul li img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          display: inline-block; }
+        #wrapper #content-area #project-details .participants ul li div {
+          display: inline-block; }
+          #wrapper #content-area #project-details .participants ul li div span {
+            display: block; }
+          #wrapper #content-area #project-details .participants ul li div .name {
+            padding: 0 15px;
+            font-weight: 600;
+            font-size: 20px; }
+          #wrapper #content-area #project-details .participants ul li div .position {
+            padding: 0 15px;
+            font-weight: 600;
+            font-size: 14px; }
+    #wrapper #content-area #sales .label-group {
+      padding: 5px 15px; }
+      #wrapper #content-area #sales .label-group label {
+        display: inline-block;
+        font-weight: 700;
+        color: rgba(40, 38, 57, 0.5); }
+      #wrapper #content-area #sales .label-group span {
+        float: right;
+        font-weight: 700;
+        color: rgba(40, 38, 57, 0.8); }
+    #wrapper #content-area #employees .col-md-4 {
+      padding: 5px !important; }
+    #wrapper #content-area #employees .emp {
+      margin: 10px 0; }
+    #wrapper #content-area #employees .col-2,
+    #wrapper #content-area #employees .col-9,
+    #wrapper #content-area #employees .col-1 {
+      padding: 0 !important; }
+    #wrapper #content-area #employees .col-9 {
+      border-right: 1px solid rgba(40, 38, 57, 0.5); }
+      #wrapper #content-area #employees .col-9 span {
+        font-size: 30px;
+        font-weight: 700;
+        display: block;
+        padding-left: 10px; }
+      #wrapper #content-area #employees .col-9 .name {
+        color: #282639; }
+      #wrapper #content-area #employees .col-9 .position {
+        color: rgba(40, 38, 57, 0.5); }
+    #wrapper #content-area #employees .col-2 {
+      text-align: center; }
+      #wrapper #content-area #employees .col-2 img {
+        width: 100%;
+        height: 65px; }
+    #wrapper #content-area #employees .col-1 {
+      text-align: center; }
+      #wrapper #content-area #employees .col-1 a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.5); }
+        #wrapper #content-area #employees .col-1 a:hover {
+          color: #282639; }
+      #wrapper #content-area #employees .col-1 i {
+        display: block;
+        padding: 3px 0; }
+        #wrapper #content-area #employees .col-1 i.fa-eye {
+          background: #38c172; }
+        #wrapper #content-area #employees .col-1 i.fa-pencil {
+          background: #3490dc; }
+        #wrapper #content-area #employees .col-1 i.fa-times {
+          background: #e3342f; }
 
 @media (max-width: 768px) {
   #wrapper #content-area {

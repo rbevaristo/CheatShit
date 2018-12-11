@@ -216,6 +216,189 @@
                 }
             }
         }
+
+        #project-details {
+            .details {
+                strong {
+                    display: block;
+                    text-align: right;
+                    margin-bottom: 7px;
+                }
+
+                span {
+                    display: block;
+                    text-align: left;
+                    margin-bottom: 7px;
+                }
+
+                .progress-bar {
+                    float: none;
+                    padding: 0;
+                    height: 10px;
+                    border-radius: 5px;
+                    background: $darkGreyFont;
+                }
+
+                hr {
+                    height: 10px;
+                    border: 0;
+                    border-radius: 5px;
+                }
+            }
+
+            .participants {
+                .card {
+                    background: $white;
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+
+                    a {
+                        text-decoration: none;
+                        color: rgba($purpleDark, 0.8);
+
+                        &:hover {
+                            color: $purpleDark;
+
+                            li {
+                                background: $lightGreyFont;
+                            }
+                        }
+                    }
+
+                    li {
+                        display: block;
+                        padding: 10px 15px;
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            display: inline-block;
+                        }
+
+                        div {
+                            display: inline-block;
+
+                            span {
+                                display: block;
+                            }
+
+                            .name {
+                                padding: 0 15px;
+                                font-weight: 600;
+                                font-size: 20px;
+                            }
+
+                            .position {
+                                padding: 0 15px;
+                                font-weight: 600;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #sales {
+
+            .label-group {
+                padding: 5px 15px;
+
+                label {
+                    display: inline-block;
+                    font-weight: 700;
+                    color: rgba($purpleDark, 0.5);
+                }
+
+                span {
+                    float: right;
+                    font-weight: 700;
+                    color: rgba($purpleDark, 0.8);
+                }
+            }
+        }
+
+        #employees {
+            .col-md-4 {
+                padding: 5px !important;
+            }
+
+            .emp {
+                margin: 10px 0;
+            }
+
+            .col-2,
+            .col-9,
+            .col-1 {
+                padding: 0 !important;
+            }
+
+            .col-9 {
+                border-right: 1px solid rgba($purpleDark, 0.5);
+
+                span {
+                    font-size: 30px;
+                    font-weight: 700;
+                    display: block;
+                    padding-left: 10px;
+                }
+
+                .name {
+                    color: $purpleDark;
+
+                }
+
+                .position {
+                    color: rgba($purpleDark, 0.5);
+                }
+            }
+
+
+            .col-2 {
+                text-align: center;
+
+                img {
+                    width: 100%;
+                    height: 65px;
+                }
+            }
+
+            .col-1 {
+                text-align: center;
+
+                a {
+                    text-decoration: none;
+
+                    color: rgba($white, 0.5);
+
+                    &:hover {
+                        color: $purpleDark;
+                    }
+                }
+
+                i {
+                    display: block;
+                    padding: 3px 0;
+
+                    &.fa-eye {
+                        background: $green;
+                    }
+
+                    &.fa-pencil {
+                        background: $blue;
+                    }
+
+                    &.fa-times {
+                        background: $red;
+                    }
+                }
+            }
+        }
     }
 }
 

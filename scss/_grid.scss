@@ -18,6 +18,12 @@
     display: inline-block
 }
 
+@for $i from 1 through $grid-columns {
+    .col-#{$i} {
+        width: 100% / $grid-columns * $i;
+    }
+}
+
 
 @media #{$breakpoint-small} {
     .container {

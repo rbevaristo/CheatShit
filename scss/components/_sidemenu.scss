@@ -37,7 +37,7 @@
             }
 
             &:hover {
-                background: $lightGrey;
+                background: $darkGrey;
                 padding: 15px 30px 15px 25px;
                 color: $purpleDark;
                 border-left: 5px solid $purpleDark;
@@ -48,7 +48,7 @@
             }
 
             &.active {
-                background: $lightGrey;
+                background: $darkGrey;
                 color: $purpleDark;
                 border-left: 5px solid $neonGreen;
                 padding: 15px 30px 15px 25px;
