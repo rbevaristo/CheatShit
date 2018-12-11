@@ -38,3 +38,20 @@ $breakpoint-small: "only screen and (min-width: 0px)";
 $breakpoint-medium: "only screen and (min-width: 700px)";
 $breakpoint-large: "only screen and (mid-width: 1008px)";
 $breakpoint-xl: "only screen and (min-width: 1300px)";
+
+// Width
+$width: 100;
+
+[class*='w-'] {
+    display: block;
+    max-width: 100%;
+    min-width: 0;
+    max-height: 10px;
+    transition: all 0.5s;
+}
+
+@for $i from 0 through $width {
+    .w-#{$i} {
+        width: 100% - ($width - $i);
+    }
+}

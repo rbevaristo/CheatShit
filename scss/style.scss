@@ -108,6 +108,114 @@
                 }
             }
         }
+
+        #projects {
+            .card {
+                .card-header {
+                    background: $white;
+                    border-top: 1px solid rgba($purpleDark, 0.5);
+                    border-bottom: 1px solid rgba($purpleLight, 0.3);
+                    padding: 20px 5px;
+
+                    span {
+                        float: right;
+                    }
+                }
+
+                .card-body {
+                    background: $white;
+                    padding-top: 10px;
+
+                    .row {
+                        .status {
+                            small {
+                                margin-top: 15px;
+                            }
+                        }
+
+                        .title {
+                            a {
+                                text-decoration: none;
+                                margin-top: 5px;
+                                font-weight: 700;
+                                font-size: 20px;
+                                display: block;
+                                color: $purpleLight;
+
+                                &:hover {
+                                    color: $purpleDark;
+                                    text-decoration: underline;
+                                }
+                            }
+
+                            small {
+                                font-size: 80%;
+                                color: rgba($purpleDark, 0.5);
+                            }
+                        }
+
+                        .progress {
+                            span {
+                                margin-top: 15px;
+                                font-size: 10px;
+                                font-weight: 600;
+                                color: rgba($purpleDark, 0.8);
+                            }
+
+                            hr {
+                                height: 10px;
+                                border: none;
+                            }
+                        }
+
+                        .assignee {
+                            text-align: center;
+
+                            ul {
+                                list-style: none;
+
+                                li {
+                                    display: inline-block;
+                                    padding: 0 1px;
+
+                                    img {
+                                        width: 30px;
+                                        height: 30px;
+                                        border-radius: 50%;
+                                    }
+
+                                    .abbreviation {
+                                        font-size: 18px;
+                                        font-weight: 700;
+                                        background: $lightGreyFont;
+                                        color: $purpleLight;
+                                        padding: 5px;
+                                        border-radius: 50%;
+                                    }
+                                }
+                            }
+                        }
+
+                        .actions {
+                            text-align: right;
+
+                            a {
+                                margin-top: 15px;
+                                display: inline-block;
+                                padding: 0 5px;
+                                text-decoration: none;
+                                color: $purpleDark;
+                            }
+                        }
+
+                        &:hover {
+                            background: $darkGrey;
+                        }
+                    }
+
+                }
+            }
+        }
     }
 }
 
